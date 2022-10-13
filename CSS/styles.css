@@ -6,12 +6,13 @@
   --colorFondo2: #faf480;
   --colorFondo3: #f84a52;
   --colorFondo4: #3bca3b;
+  --title: #302E2E;
   font-size: 62.5%;
 }
 
 body {
   margin: 0px;
-  font-family: "Nerko One", cursive;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .container {
   position: relative;
@@ -114,11 +115,23 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   animation: movimiento 10s infinite linear alternate;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .contenedor-portada {
   width: 100%;
   height: 240px;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.capa{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @keyframes movimiento {
@@ -132,8 +145,10 @@ body {
 
 .titulos {
   color: var(--blanco);
+  text-shadow: 4px 4px 10px var(--title);
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 3.0rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: auto;
   margin: auto;
 }

@@ -5,7 +5,8 @@
   --font: #3C3935;
   --white: #FFFF;
   --login: #498afb;
-  --cart: #ff3860;
+  --cart: #FF0000;
+  --bfont: black;
 }
 
 *{
@@ -37,10 +38,11 @@ body{
 
 .sub-header{
   padding: 0 20px;
-  background-color: var(--body);
+  background-color: var(--submenu);
   height: 50px;
   display: flex;
   justify-content: space-between;
+  font-size: 150%;
 }
 
 #brand{
@@ -69,12 +71,13 @@ ul{
 }
 
 ul a{
-  color : var(--font)
+  color : var(--bfont)
 }
 
 ul li{
   padding: 5px;
   margin-left: 10px;
+  margin-bottom: 4px;
 }
 
 ul li:hover{
@@ -157,6 +160,7 @@ ul li:hover{
   opacity: 90%;
   font-size: 130%;
   font-weight: bold;
+  align-items: normal;
 }
 
 @media only screen and (max-width: 600px) {
