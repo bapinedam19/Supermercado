@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supermercado el Exito</title>
+  <link rel="stylesheet" href="../CSS/normalize.css">
+  <link rel="stylesheet" href="../CSS/styles.css">
+  <link rel="stylesheet" href="../CSS/menu.css">
+</head>
+
+<body>
+  <header class="prin-header">
+    <div id="brand"><img src="../IMG/shopping-cart.png" alt=""><a href="#">Super Mercado</a></div>
+    <nav>
+      <ul>
+        <li id="login"><a href="#">Login</a></li>
+        <li id="cart"><a href="#">Sign up</a></li>
+      </ul>
+    </nav>
+    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+      <ul class="mobile-menu">
+        <li><a href="">Categorias</a></li>
+        <li><a href="">Promociones</a></li>
+        <li><a href="">Nuevas Ofertas</a></li>
+        <li id="login"><a href="#">Login</a></li>
+        <li id="cart"><a href="#">Sign up</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="portada" style="background-image: url(../IMG/Carnes\ y\ Aves/Carnes.webp);">
+    <div class="contenedor-portada">
+      <div class="capa">
+        <h1 class="titulos">Carnes</h1>
+      </div>
+    </div>
+  </div>
+
+  <header class="sub-header">
+    <ul>
+      <li><a href="">Categorias</a></li>
+      <li><a href="">Promociones</a></li>
+      <li><a href="">Nuevas Ofertas</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <section class="contenido">
+      <div class="page-content">
+        <div class="product-container">
+          <h3>Carne De Res Molida X Lb</h3>
+          <img src="../IMG/Carnes y Aves/Carne De Res Molida X Lb.webp" />
+          <h1>L 125.25</h1>
+          <button class="button-add" onclick="add('product-1', 125.5)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+          <h3>Carne De Pollo Rey Para Bisteck Fresco X Lb</h3>
+          <img src="../IMG/Carnes y Aves/Carne De Pollo Rey Para Bisteck Fresco X Lb.webp" />
+          <h1>L 149.55</h1>
+          <button class="button-add" onclick="add('product-2', 149.55)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+          <h3>Carne De Res Para Asar Barbacoa X Lb</h3>
+          <img src="../IMG/Carnes y Aves/Carne De Res Para Asar Barbacoa X Lb.webp" />
+          <h1>L 145.55</h1>
+          <button class="button-add" onclick="add('product-3', 145.55)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+          <h3>Chuleta De Cerdo Santa Lucia Deshuesada 454Gr</h3>
+          <img src="../IMG/Carnes y Aves/Chuleta De Cerdo Santa Lucia Deshuesada 454Gr.webp" />
+          <h1>L 102.30</h1>
+          <button class="button-add" onclick="add('product-4', 102.30)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+          <h3>Carne De Res Para Asar Picnic X Lb</h3>
+          <img src="../IMG/Carnes y Aves/Carne De Res Para Asar Picnic X Lb.webp" />
+          <h1>L 125.30</h1>
+          <button class="button-add" onclick="add('product-5', 125.30)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+          <h3>Carne En Fajitas Rey De Pollo Fresco X Lb</h3>
+          <img src="../IMG/Carnes y Aves/Carne En Fajitas Rey De Pollo Fresco X Lb.webp" />
+          <h1>L 115.30</h1>
+          <button class="button-add" onclick="add('product-6', 115.30)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+          <h3>Costilla De Cerdo En Cubo Ahumado X Lb</h3>
+          <img src="../IMG/Carnes y Aves/Costilla De Cerdo En Cubo Ahumado X Lb.webp" />
+          <h1>L 85.40</h1>
+          <button class="button-add" onclick="add('product-7', 85.40)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+          <h3>Costilla De Cerdo X Lb</h3>
+          <img src="../IMG/Carnes y Aves/Costilla De Cerdo X Lb.webp" />
+          <h1>L 85.40</h1>
+          <button class="button-add" onclick="add('product-8', 85.40)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+          <h3>Piernitas De Pollo Rey Freca Granrl X Lb</h3>
+          <img src="../IMG/Carnes y Aves/Piernitas De Pollo Rey Freca Granel X Lb.webp" />
+          <h1>L 105.40</h1>
+          <button class="button-add" onclick="add('product-9', 105.40)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+          <h3>Pollo Norteño Sin Menudos Mas Muslo x Unidad</h3>
+          <img src="../IMG/Carnes y Aves/Pollo Norteño Sin Menudos Mas Muslo x Unidad.webp" />
+          <h1>L 115.39</h1>
+          <button class="button-add" onclick="add('product-10', 115.39)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+          <h3>Pollo Rostizado Unidad</h3>
+          <img src="../IMG/Carnes y Aves/Pollo Rostizado Unidad.webp" />
+          <h1>L 65.49</h1>
+          <button class="button-add" onclick="add('product-11', 55.49)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+          <h3>Tajo De Cerdo Para Bistec X Lb</h3>
+          <img src="../IMG/Carnes y Aves/Tajo De Cerdo Para Bistec X Lb.webp" />
+          <h1>L 125.89</h1>
+          <button class="button-add" onclick="add('product-12', 125.89)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+          <h3>Tajo De Res Para Estofado X Lb</h3>
+          <img src="../IMG/Carnes y Aves/Tajo De Res Para Estofado X Lb.webp" />
+          <h1>L 125.89</h1>
+          <button class="button-add" onclick="add('product-12', 125.89)">Agregar</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="Pie-pag">
+    <p>©Copyrigth-Derechos Reservados 20222-Tienda Only</p>
+  </footer>
+
+  <script src="../JS/index.js"></script>
+</body>
+
+</html>

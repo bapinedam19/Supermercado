@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supermercado el Exito</title>
+  <link rel="stylesheet" href="../CSS/normalize.css">
+  <link rel="stylesheet" href="../CSS/styles.css">
+  <link rel="stylesheet" href="../CSS/menu.css">
+</head>
+
+<body>
+  <header class="prin-header">
+    <div id="brand"><img src="../IMG/shopping-cart.png" alt=""><a href="#">Super Mercado</a></div>
+    <nav>
+      <ul>
+        <li id="login"><a href="#">Login</a></li>
+        <li id="cart"><a href="#">Sign up</a></li>
+      </ul>
+    </nav>
+    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+      <ul class="mobile-menu">
+        <li><a href="">Categorias</a></li>
+        <li><a href="">Promociones</a></li>
+        <li><a href="">Nuevas Ofertas</a></li>
+        <li id="login"><a href="#">Login</a></li>
+        <li id="cart"><a href="#">Sign up</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="portada" style="background-image: url(../IMG/Hogar/Hogar.webp);">
+    <div class="contenedor-portada">
+      <div class="capa">
+        <h1 class="titulos">Cuidado Del Hogar</h1>
+      </div>
+    </div>
+  </div>
+
+  <header class="sub-header">
+    <ul>
+      <li><a href="">Categorias</a></li>
+      <li><a href="">Promociones</a></li>
+      <li><a href="">Nuevas Ofertas</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <section class="contenido">
+      <div class="page-content">
+        <div class="product-container">
+          <h3>#Carbon Instataneo Esential Everyday Para</h3>
+          <img src="../IMG/Hogar/Carbon Instataneo Esential Everyday Para.webp" />
+          <h1>L 85.50</h1>
+          <button class="button-add" onclick="add('product-1', 85.50)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+          <h3>Cloro Magia Blanca Desinfectante Lavanda</h3>
+          <img src="../IMG/Hogar/Cloro Magia Blanca Desinfectante Lavanda.webp" />
+          <h1>L 250</h1>
+          <button class="button-add" onclick="add('product-2', 250)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+          <h3>Papel Aluminio Essential Everyday 25Ft</h3>
+          <img src="../IMG/Hogar/Papel Aluminio Essential Everyday 25 Ft.webp" />
+          <h1>L 50</h1>
+          <button class="button-add" onclick="add('product-3', 50)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+          <h3>Papel Plástico Essential Everyday 200 Ft</h3>
+          <img src="../IMG/Hogar/Papel Plástico Essential Everyday 200 Ft.webp" />
+          <h1>L 50.20</h1>
+          <button class="button-add" onclick="add('product-4', 50.20)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+          <h3>Papel Toalla Nube Blanca 180 Hojas Dobles 3 ROL</h3>
+          <img src="../IMG/Hogar/Papel Toalla Nube Blanca 180 Hojas Dobles 3 ROL.webp" />
+          <h1>L 55</h1>
+          <button class="button-add" onclick="add('product-5', 55)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+          <h3>Platos Desechables Essential Everyday</h3>
+          <img src="../IMG/Hogar/Platos Desechables Essential Everyday De Foam 50 un.webp" />
+          <h1>L 60</h1>
+          <button class="button-add" onclick="add('product-6',60 )">Agregar</button>
+        </div>
+
+        <div class="product-container">
+          <h3>Quitamanchas Essential Everyday 48 OZ</h3>
+          <img src="../IMG/Hogar/Quitamanchas Essential Everyday 48 OZ.webp" />
+          <h1>L 85</h1>
+          <button class="button-add" onclick="add('product-7', 85)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+          <h3>Servilletas Essential Everyday Casual 250 Hijas 1 Un</h3>
+          <img src="../IMG/Hogar/Servilletas Essential Everyday casual 250 Hojas 1 Un.webp" />
+          <h1>L 55</h1>
+          <button class="button-add" onclick="add('product-8', 55)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+          <h3>Suavizante Suavitel Primavera 3Lt</h3>
+          <img src="../IMG/Hogar/Suavizante Suavitel Primavera 3Lt.webp" />
+          <h1>L 65.35</h1>
+          <button class="button-add" onclick="add('product-9',65.35 )">Agregar</button>
+        </div>
+
+        <div class="product-container">
+          <h3>Toallas Húmedas Essential Everday Desinfectantes</h3>
+          <img src="../IMG/Hogar/Toallas Húmedas Essential Everyday Desinfectantes Fresh.webp" />
+          <h1>L 35</h1>
+          <button class="button-add" onclick="add('product-10', 35)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+          <h3>Vasos Desechables Esential Everday</h3>
+          <img src="../IMG/Hogar/Vasos Desechables Esential Everyday.webp" />
+          <h1>L 30.95</h1>
+          <button class="button-add" onclick="add('product-11', 30.95)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+          <h3>Vasos Desechables Essential Everyday</h3>
+          <img src="../IMG/Hogar/Vasos Desechables Essential Everyday De Foamy 16 Oz.webp" />
+          <h1>L 25.58</h1>
+          <button class="button-add" onclick="add('product-12', 25.58)">Agregar</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="Pie-pag">
+    <p>©Copyrigth-Derechos Reservados 20222-Tienda Only</p>
+  </footer>
+
+  <script src="../JS/index.js"></script>
+</body>
+
+</html>

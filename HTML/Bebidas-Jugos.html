@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supermercado el Exito</title>
+  <link rel="stylesheet" href="../CSS/normalize.css">
+  <link rel="stylesheet" href="../CSS/styles.css">
+  <link rel="stylesheet" href="../CSS/menu.css">
+</head>
+
+<body>
+  <header class="prin-header">
+    <div id="brand"><img src="../IMG/shopping-cart.png" alt=""><a href="#">Super Mercado</a></div>
+    <nav>
+      <ul>
+        <li id="login"><a href="#">Login</a></li>
+        <li id="cart"><a href="#">Sign up</a></li>
+      </ul>
+    </nav>
+    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+      <ul class="mobile-menu">
+        <li><a href="">Categorias</a></li>
+        <li><a href="">Promociones</a></li>
+        <li><a href="">Nuevas Ofertas</a></li>
+        <li id="login"><a href="#">Login</a></li>
+        <li id="cart"><a href="#">Sign up</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="portada" style="background-image: url(../IMG/Bebidas\ y\ Jugos/Bebidas-jugos.webp);">
+    <div class="contenedor-portada">
+      <div class="capa">
+        <h1 class="titulos">Bebida y Jugos</h1>
+      </div>
+    </div>
+  </div>
+
+  <header class="sub-header">
+    <ul>
+      <li><a href="">Categorias</a></li>
+      <li><a href="">Promociones</a></li>
+      <li><a href="">Nuevas Ofertas</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <section class="contenido">
+      <div class="page-content">
+        <div class="product-container">
+          <h3>Bebida Aloe Vera Okf Original</h3>
+          <img src="../IMG/Bebidas y Jugos/Bebida Aloe Vera Okf Original 1.5 Lt.webp" />
+          <h1>L 25</h1>
+          <button class="button-add" onclick="add('product-1', 25)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+          <h3>Te Blanco Hatsu Lychee</h3>
+          <img src="../IMG/Bebidas y Jugos/Te Blanco Hatsu Lychee 400 MI.webp" />
+          <h1>L 55</h1>
+          <button class="button-add" onclick="add('product-2', 55)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+          <h3>Graniccino Espresso Americano Cafe 9.5 Oz</h3>
+          <img src="../IMG/Bebidas y Jugos/Graniccino Espresso Americano Cafe 9.5 Oz.webp" />
+          <h1>L 55</h1>
+          <button class="button-add" onclick="add('product-3', 55)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+          <h3>Bebida De Aloe Saviloe 320 ml</h3>
+          <img src="../IMG/Bebidas y Jugos/Bebida De Aloe Saviloe 320 ml.webp" />
+          <h1>L 20</h1>
+          <button class="button-add" onclick="add('product-4', 20)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+          <h3>Bebida Aloe Vera Okf Original 500 MI</h3>
+          <img src="../IMG/Bebidas y Jugos/Bebida Aloe Vera Okf Original 500 MI.webp" />
+          <h1>L 50</h1>
+          <button class="button-add" onclick="add('product-5', 50)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+          <h3>Bebida Energizante Monster Mango Loco Lata</h3>
+          <img src="../IMG/Bebidas y Jugos/Bebida Energizante Monster Mango Loco Lata 473 MI.webp" />
+          <h1>L 20</h1>
+          <button class="button-add" onclick="add('product-6', 20)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+          <h3>Bebida Hidratante Gatorade Sport Fruit Punch</h3>
+          <img src="../IMG/Bebidas y Jugos/Bebida Hidratante Gatorade Sport Fruit Punch 591 MI.webp" />
+          <h1>L 20</h1>
+          <button class="button-add" onclick="add('product-7', 20)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+          <h3>Jugo Snapple Grapeade</h3>
+          <img src="../IMG/Bebidas y Jugos/Jugo Snapple Grapeade 16 Oz.webp" />
+          <h1>L 16</h1>
+          <button class="button-add" onclick="add('product-8', 16)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+          <h3>Te Blanco Hatsu Mangostino</h3>
+          <img src="../IMG/Bebidas y Jugos/Te Blanco Hatsu Mangostino 400 MI.webp" />
+          <h1>L 55</h1>
+          <button class="button-add" onclick="add('product-9', 55)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+          <h3>Te Blanco Hatsu Sin Azucar Carambolo y Flor de Loto</h3>
+          <img src="../IMG/Bebidas y Jugos/Te Blanco Hatsu Sin Azúcar Carambolo y Flor de Loto 400 MI.webp" />
+          <h1>L 55</h1>
+          <button class="button-add" onclick="add('product-10', 55)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+          <h3>Te Blanco Hatsu Sin Azúcar Flor Cerezo 400 MI</h3>
+          <img src="../IMG/Bebidas y Jugos/Te Blanco Hatsu Sin Azúcar Flor Cerezo 400 MI.webp" />
+          <h1>L 55</h1>
+          <button class="button-add" onclick="add('product-11', 55)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+          <h3>Te Negro Lipton Sabor Limon 500 MI</h3>
+          <img src="../IMG/Bebidas y Jugos/Te Negro Lipton Sabor Limon 500 MI.webp" />
+          <h1>L 15</h1>
+          <button class="button-add" onclick="add('product-12', 15)">Agregar</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="Pie-pag">
+    <p>©Copyrigth-Derechos Reservados 20222-Tienda Only</p>
+  </footer>
+
+  <script src="../JS/index.js"></script>
+</body>
+
+</html>

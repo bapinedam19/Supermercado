@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Supermercado el Exito</title>
+  <link rel="stylesheet" href="../CSS/normalize.css" />
+  <link rel="stylesheet" href="../CSS/styles.css" />
+  <link rel="stylesheet" href="../CSS/menu.css" />
+</head>
+
+<body>
+  <header class="prin-header">
+    <div id="brand"><img src="../IMG/shopping-cart.png" alt=""><a href="#">Super Mercado</a></div>
+    <nav>
+      <ul>
+        <li id="login"><a href="#">Login</a></li>
+        <li id="cart"><a href="#">Sign up</a></li>
+      </ul>
+    </nav>
+    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+      <ul class="mobile-menu">
+        <li><a href="">Categorias</a></li>
+        <li><a href="">Promociones</a></li>
+        <li><a href="">Nuevas Ofertas</a></li>
+        <li id="login"><a href="#">Login</a></li>
+        <li id="cart"><a href="#">Sign up</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="portada" style="background-image: url(../IMG/Embutidos/Embutidos.webp)">
+    <div class="contenedor-portada">
+      <div class="capa">
+        <h1 class="titulos">Embutidos</h1>
+      </div>
+    </div>
+  </div>
+
+  <header class="sub-header">
+    <ul>
+      <li><a href="">Categorias</a></li>
+      <li><a href="">Promociones</a></li>
+      <li><a href="">Nuevas Ofertas</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <section class="contenido">
+      <div class="page-content">
+        <div class="product-container">
+          <h3>Jamon Bavaria Delicia</h3>
+          <img src="../IMG/Embutidos/Jamon Bavaria Delicia.webp" />
+          <h1>L 45</h1>
+          <button class="button-add" onclick="add('product-1', 50)">
+            Agregar
+          </button>
+        </div>
+
+        <div class="product-container">
+          <h3>Chorizo Cervezero El Porteño</h3>
+          <img src="../IMG/Embutidos/Chorizo Cervezero El Porteño.webp" />
+          <h1>L 85</h1>
+          <button class="button-add" onclick="add('product-2', 300)">
+            Agregar
+          </button>
+        </div>
+
+        <div class="product-container">
+          <h3>Jamon de Pollo Delicia</h3>
+          <img src="../IMG/Embutidos/Jamon de Pollo Delicia.webp" />
+          <h1>L 55</h1>
+          <button class="button-add" onclick="add('product-3', 250)">
+            Agregar
+          </button>
+        </div>
+
+        <div class="product-container">
+          <h3>Salchicha Big Dog El Porteño</h3>
+          <img src="../IMG/Embutidos/Salchicha Big Dog El Porteño.webp" />
+          <h1>L 92</h1>
+          <button class="button-add" onclick="add('product-4', 200)">
+            Agregar
+          </button>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="Pie-pag">
+    <p>©Copyrigth-Derechos Reservados 20222-Tienda Only</p>
+  </footer>
+
+  <script src="../JS/index.js"></script>
+</body>
+
+</html>

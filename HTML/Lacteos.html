@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supermercado el Exito</title>
+  <link rel="stylesheet" href="../CSS/normalize.css">
+  <link rel="stylesheet" href="../CSS/styles.css">
+  <link rel="stylesheet" href="../CSS/menu.css">
+</head>
+
+<body>
+  <header class="prin-header">
+    <div id="brand"><img src="../IMG/shopping-cart.png" alt=""><a href="#">Super Mercado</a></div>
+    <nav>
+      <ul>
+        <li id="login"><a href="#">Login</a></li>
+        <li id="cart"><a href="#">Sign up</a></li>
+      </ul>
+    </nav>
+    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+      <ul class="mobile-menu">
+        <li><a href="">Categorias</a></li>
+        <li><a href="">Promociones</a></li>
+        <li><a href="">Nuevas Ofertas</a></li>
+        <li id="login"><a href="#">Login</a></li>
+        <li id="cart"><a href="#">Sign up</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="portada" style="background-image: url(../IMG/Lacteos/Lacteos.webp);">
+    <div class="contenedor-portada">
+      <div class="capa">
+        <h1 class="titulos">Lacteos</h1>
+      </div>
+    </div>
+  </div>
+
+  <header class="sub-header">
+    <ul>
+      <li><a href="">Categorias</a></li>
+      <li><a href="">Promociones</a></li>
+      <li><a href="">Nuevas Ofertas</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <section class="contenido">
+      <div class="page-content">
+        <div class="product-container">
+          <h3>Leche Con Chocolate Leyde 946 MI</h3>
+          <img src="../IMG/Lacteos/Leche Con Chocolate Leyde 946 MI.webp" />
+          <h1>L 15</h1>
+          <button class="button-add" onclick="add('product-1', 15)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+          <h3>Leche en Polvo dos Pino In Line</h3>
+          <img src="../IMG/Lacteos/Leche en Polvo dos Pino In Line.webp" />
+          <h1>L 55</h1>
+          <button class="button-add" onclick="add('product-2', 55)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+          <h3>Leche Leyde Chocolate 900 MI</h3>
+          <img src="../IMG/Lacteos/Leche Leyde Chocolate 900 MI.webp" />
+          <h1>L 15</h1>
+          <button class="button-add" onclick="add('product-3', 15)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+          <h3>Leche Leyde Descremada Uat 946 MI</h3>
+          <img src="../IMG/Lacteos/Leche Leyde Descremada Uat 946 MI.webp" />
+          <h1>L 30</h1>
+          <button class="button-add" onclick="add('product-4', 30)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+          <h3>Leche Leyde Fresaleyde Sabor Fresa 473 MI</h3>
+          <img src="../IMG/Lacteos/Leche Leyde Fresaleyde Sabor Fresa 473 MI.webp" />
+          <h1>L 20</h1>
+          <button class="button-add" onclick="add('product-5', 20)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+          <h3>Leche Leyde Semidescremada</h3>
+          <img src="../IMG/Lacteos/Leche Leyde Semidescremada.webp" />
+          <h1>L 55</h1>
+          <button class="button-add" onclick="add('product-6', 55)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+          <h3>Leche Uht Dos Pinos Entera Vitaminada 1 Lt</h3>
+          <img src="../IMG/Lacteos/Leche Uht Dos Pinos Entera Vitaminada 1 Lt.webp" />
+          <h1>L 30</h1>
+          <button class="button-add" onclick="add('product-7', 30)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+          <h3>Queso Crema Dos Pinos Original 2100Gr</h3>
+          <img src="../IMG/Lacteos/Queso Crema Dos Pinos Original 210Gr.webp" />
+          <h1>L 16</h1>
+          <button class="button-add" onclick="add('product-8', 16)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+          <h3>Queso Premier Rebanado 272Gr</h3>
+          <img src="../IMG/Lacteos/Queso Premier Rebanado 272Gr.webp" />
+          <h1>L 25</h1>
+          <button class="button-add" onclick="add('product-9', 25)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+          <h3>Queso Tipo Quesillo Leyde Estilo Sureño 400</h3>
+          <img src="../IMG/Lacteos/Queso Tipo Quesillo Leyde Estilo Sureño 400.webp" />
+          <h1>L 26</h1>
+          <button class="button-add" onclick="add('product-10', 26)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+          <h3>Queso Procesado Sula 180Gr</h3>
+          <img src="../IMG//Lacteos/Queso Procesado Sula 180Gr.webp" />
+          <h1>L 26</h1>
+          <button class="button-add" onclick="add('product-11', 26)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+          <h3>Yogurt Dos Pinos Deligurt Sabor Arándanos 750 MI</h3>
+          <img src="../IMG/Lacteos/Yogurt Dos Pinos Deligurt Sabor Arándanos 750 MI.webp" />
+          <h1>L 12.50</h1>
+          <button class="button-add" onclick="add('product-12', 12.50)">Agregar</button>
+        </div>
+
+        <div class="product-container">
+          <h3>Yogurt Dos Pinos Deligurt Sabor Frutas Tropicales</h3>
+          <img src="../IMG/Lacteos/Yogurt Dos Pinos Deligurt Sabor Frutas Tropicales.webp" />
+          <h1>L 12.50</h1>
+          <button class="button-add" onclick="add('product-13', 15.50)">Agregar</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="Pie-pag">
+    <p>©Copyrigth-Derechos Reservados 20222-Tienda Only</p>
+  </footer>
+
+  <script src="../JS/index.js"></script>
+</body>
+
+</html>
