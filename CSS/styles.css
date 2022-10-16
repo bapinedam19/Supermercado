@@ -6,7 +6,7 @@
   --colorFondo2: #faf480;
   --colorFondo3: #f84a52;
   --colorFondo4: #3bca3b;
-  --title: #302E2E;
+  --title: #302e2e;
   font-size: 62.5%;
 }
 
@@ -128,7 +128,7 @@ body {
   justify-content: center;
 }
 
-.capa{
+.capa {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -147,7 +147,7 @@ body {
   color: var(--blanco);
   text-shadow: 4px 4px 10px var(--title);
   text-align: center;
-  font-size: 3.0rem;
+  font-size: 3rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: auto;
   margin: auto;
